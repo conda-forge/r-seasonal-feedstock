@@ -5,11 +5,9 @@ Home: http://www.seasonal.website
 
 Package license: GPL-2.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-seasonal-feedstock/blob/master/LICENSE.txt)
 
 Summary: Easy-to-use interface to X-13-ARIMA-SEATS, the seasonal adjustment software by the US Census Bureau. It offers full access to almost all options and outputs of X-13, including X-11 and SEATS, automatic ARIMA model search, outlier detection and support for user defined holiday variables, such as Chinese New Year or Indian Diwali. A graphical user interface can be used through the 'seasonalview' package. Uses the X-13-binaries from the 'x13binary' package.
-
-
 
 Current build status
 ====================
@@ -108,9 +106,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
@@ -119,5 +117,6 @@ Feedstock Maintainers
 * [@RyanHackney](https://github.com/RyanHackney/)
 * [@conda-forge/r](https://github.com/conda-forge/r/)
 * [@ndmaxar](https://github.com/ndmaxar/)
+* [@oblute](https://github.com/oblute/)
 * [@rluria14](https://github.com/rluria14/)
 
