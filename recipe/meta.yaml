@@ -1,4 +1,4 @@
-{% set version = "1.8.1" %}
+{% set version = "1.8.2" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/seasonal_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/seasonal/seasonal_{{ version }}.tar.gz
-  sha256: e44792c11eda2743747fb3ad8d83378410115a6dbacd7ac65ef4a24f6631b89e
+  sha256: 9ac3480de470f9946b34ac3eeaf3ccdf5c973ba129edab51f1ab92c8af5fff4b
 
 build:
   merge_build_host: true  # [win]
