@@ -1,4 +1,4 @@
-{% set version = "1.9.0" %}
+{% set version = "1.10.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/seasonal_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/seasonal/seasonal_{{ version }}.tar.gz
-  sha256: 40dc25ea890ad6abcabccf12019e1bcffefd925265c2cc14b49a767a7ac4f54e
+  sha256: 5a3f2d001cb90d112eea4b97367d42d66cc76e8d348665cf86576738f93aa685
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
