@@ -1,4 +1,4 @@
-{% set version = "1.10.0" %}
+{% set version = "1.11.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/seasonal_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/seasonal/seasonal_{{ version }}.tar.gz
-  sha256: 5a3f2d001cb90d112eea4b97367d42d66cc76e8d348665cf86576738f93aa685
+  sha256: 8412e1fae62b3f619dfa0f0a15f3680fcb17455ce00510bb90f723d817d07174
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -39,8 +39,8 @@ test:
 about:
   home: http://www.seasonal.website
   license: GPL-2.0-or-later
-  summary: Easy-to-use interface to X-13-ARIMA-SEATS, the seasonal adjustment software by the US Census Bureau. It offers full access to almost all options and outputs of X-13, including X-11 and SEATS, automatic ARIMA model search, outlier detection and support for user defined holiday variables, such as Chinese New Year
-    or Indian Diwali. A graphical user interface can be used through the 'seasonalview' package. Uses the X-13-binaries from the 'x13binary' package.
+  summary: Easy-to-use interface to X-13-ARIMA-SEATS, the seasonal adjustment software by the US Census Bureau. It offers full access to almost all options and outputs of X-13, including X-11 and SEATS, automatic ARIMA model search, outlier detection and support for user defined holiday variables, such as Chinese New 
+    Year or Indian Diwali. A graphical user interface can be used through the 'seasonalview' package. Uses the X-13-binaries from the 'x13binary' package.
   license_family: GPL3
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
